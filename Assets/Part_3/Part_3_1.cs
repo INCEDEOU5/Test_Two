@@ -7,9 +7,20 @@ public class Part_3_1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Area(10, 3);       //Result should be 30
-        //Area();            //Result should be 1
-        //Area(2.5f, 3.7f);  //Result should be 9.25f
+        
+        print (Area(10, 3));       //Result should be 30
+        print (Area());            //Result should be 1
+        print (Area(2.5f, 3.7f));  //Result should be 9.25f
+    }
+
+    int Area (int length  = 1, int width = 1)
+    {
+        return (length * width);
+    }
+
+    float Area (float length, float width)
+    {
+        return (length * width);
     }
 
     //Create a function called Area where you pass in two integer values and
